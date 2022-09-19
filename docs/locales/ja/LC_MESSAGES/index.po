@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Nariaki Tateiwa
+# This file is distributed under the same license as the ppulp package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ppulp \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-19 10:03+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../index.rst:21
+msgid "Contents:"
+msgstr ""
+
+#: ../../index.rst:7
+msgid "Welcome to ppulp's documentation!"
+msgstr ""
+
+#: ../../index.rst:9
+msgid ""
+"P(retty)PuLP is developed as an extension of the linear programming "
+"modeling tool `PuLP <https://coin-or.github.io/pulp/>`_ . PPuLP has "
+"following functions."
+msgstr ""
+"P(retty)PuLP は線形計画法モデリングツールである `PuLP <https://coin-or.github.io/pulp/>`_ の拡張として開発されています。"
+"PPuLPは次の機能を持っています。"
+
+#: ../../index.rst:12
+msgid "Variable product"
+msgstr "変数積"
+
+#: ../../index.rst:13
+msgid "If-then constraints"
+msgstr "If-then 制約"
+
+#: ../../index.rst:14
+msgid "Absolute values"
+msgstr "絶対値"
+
+#: ../../index.rst:15
+msgid "Piecewise linear approximation of nonlinear functions"
+msgstr "非線形関数の区分線形近似"
+
+#: ../../index.rst:16
+msgid "Logical operations (And, Or, Xor)"
+msgstr "論理演算 (And, Or, Xor)"
+
+#: ../../index.rst:17
+msgid "Reduction (Sum, Prod)"
+msgstr "縮約 (Sum, Prod)"
+
+#: ../../index.rst:19
+msgid "PPuLP helps user to create modeling more intuitive and simplified."
+msgstr "PPuLPはユーザーのモデリングをより直感的かつシンプルに行うことをサポートします。"
+
+#: ../../index.rst:30
+msgid "Indices and tables"
+msgstr ""
+
+#: ../../index.rst:32
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../index.rst:33
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../../index.rst:34
+msgid ":ref:`search`"
+msgstr ""
+

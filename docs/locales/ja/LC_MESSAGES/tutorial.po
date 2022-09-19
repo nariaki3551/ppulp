@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Nariaki Tateiwa
+# This file is distributed under the same license as the ppulp package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ppulp \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-19 10:03+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../tutorial.rst:2
+msgid "Tutorial"
+msgstr ""
+
+#: ../../tutorial.rst:5
+msgid "Contents"
+msgstr ""
+
+#: ../../tutorial.rst:8
+msgid "Variable product"
+msgstr "変数積"
+
+#: ../../tutorial.rst:10
+msgid ""
+"Often variable products appear in the formulation of optimization "
+"problems."
+msgstr "変数積は最適化問題の中でしばしば現れます。"
+
+#: ../../tutorial.rst:13 ../../tutorial.rst:112 ../../tutorial.rst:180
+#: ../../tutorial.rst:212
+msgid "Notation"
+msgstr "記法"
+
+#: ../../tutorial.rst:15
+msgid ""
+"The creation of an object representing a variable product is simply the "
+"product of a variable or expression object."
+msgstr "変数積を表すオブジェクトの生成は単に変数や式を掛け合わせるだけです。"
+
+#: ../../tutorial.rst:22 ../../tutorial.rst:187 ../../tutorial.rst:224
+msgid "Example"
+msgstr ""
+
+#: ../../tutorial.rst:24
+msgid "The following is the simple example of problem using variable product."
+msgstr "下記は変数積を用いたモデリングのシンプルな例です。"
+
+#: ../../tutorial.rst:57
+msgid ""
+"In ppulp, the linearization process is performed when we call the solve()"
+" function. To understand this process, let us observe the problem "
+"performed the linearization function."
+msgstr ""
+"ppulpではsolve()関数を実行したときに線形化のプロセスが行われます。"
+"この線形化プロセスを確認するために、linerize()関数を実行して問題がどのように変化するか見てみましょう。"
+
+#: ../../tutorial.rst:76
+msgid ""
+"A variable ``__0_mul`` has created, which corresponds to the variable "
+":math:``z = x y``."
+msgstr ""
+"``__0_mul``変数が作成されています。これは:math:``z = x y``に相当する変数です。"
+
+#: ../../tutorial.rst:78
+msgid ""
+"Generally, when we formulate the following problem, we use ``lpProd`` "
+"function."
+msgstr ""
+"一般的に、より多くの数の変数積を扱う場合は``lpProd``関数を用います。"
+
+#: ../../tutorial.rst:107
+msgid "If-then constraint"
+msgstr ""
+
+#: ../../tutorial.rst:109
+msgid ""
+"ppulp also supports if-then constraints such as :math:``y >= 0`` must be "
+"satisfied only when :math:``x >= 0`` is satisfied."
+msgstr ""
+":math:``x >= 0``を満たす場合にのみ:math:``y >= 0``が満たされるようにするというようなif-then制約をppulpはサポートします。"
+
+#: ../../tutorial.rst:114
+msgid ""
+"The notation of adding constraint B if constraint A is satisfied is as "
+"follows."
+msgstr ""
+"制約Aを満たす場合に制約Bを満たすというif-then制約は次のように書きます。"
+
+#: ../../tutorial.rst:120
+msgid "Both equality and inequality constraints both can be used as A and B."
+msgstr "制約AとBには等式制約と不等式制約のどちらも用いることができます。"
+
+#: ../../tutorial.rst:124
+msgid ""
+"If-then constraints cause an error of 1e-5 per variable. That is, if x = "
+"1 is the optimal solution, there will be an error of :math:``x = 1 \\pm "
+"10^{-5}``."
+msgstr ""
+"If-then制約は変数ごとに1e-5の誤差をもたらし得ます。すなわち、x=1が最適解の場合に"
+"出力解として:math:``x = 1 \\pm 10^{-5}`` の値をとり得ます。"
+
+
+#: ../../tutorial.rst:127
+msgid "Example 1"
+msgstr ""
+
+#: ../../tutorial.rst:151
+msgid "Example 2"
+msgstr ""
+
+#: ../../tutorial.rst:177
+msgid "Absolution value"
+msgstr "絶対値"
+
+#: ../../tutorial.rst:207
+msgid "Approximation of nonlinear functions"
+msgstr "非線形関数の近似"
+
+#: ../../tutorial.rst:209
+msgid ""
+"ppulp allows you to approximate nonlinear functions such as log, x^2, and"
+" so on. ``PiecewiseLinear`` is used to create functions like object."
+msgstr ""
+"ppulp log, x^2などのような非線形関数の近似による線形化をサポートします。"
+"``PiecewiseLinear``はそのための区分線形近似をサポートする関数です。"
+
+#: ../../tutorial.rst:218
+msgid ""
+"This will approximate :math:``f(x)`` in the domain of the function "
+":math:``xl <= x <= xu``, and ``num`` is the number of sample points to "
+"approximate. The larger ``num``, the more accurate the approximation, but "
+"at the same time, the more slack variables and constraints are created "
+"and added to the problem."
+msgstr ""
+"これは関数:math:``f(x)``を表します。ここで:math:``xl <= x <= xu``は定義域で"
+"``num``は近似のためのサンプル点数です。"
+"``num``が大きくなるほどより近似が正確になる一方、"
+"より多くのスラック変数と制約が作成されることになります。"
+
+#: ../../tutorial.rst:251
+msgid ""
+"xl and xu are currently need to be provided by the user. It is usefull to"
+" use ``maxValue`` and ``minValue`` to determin the xl and xu. These return "
+"the maximum and minimum values that the expression can take."
+msgstr ""
+"xlとxuは現状、ユーザーが与える必要があります。"
+"``maxValue``と``minValue``はxlとxuを決めるのに役立つでしょう。"
+"これらはそれぞれ、式がとり得る値の最大値と最小値を返します。"
+
+#: ../../tutorial.rst:261
+msgid "Logic operation"
+msgstr ""
+
+#: ../../tutorial.rst:263
+msgid ""
+"Binary variables can be regarded as logical values because binary "
+"variables take only two values, 0 or 1."
+msgstr ""
+"バイナリ変数は0と1の値のみ取り得るので論理値と見なすことができます。"
+
+#: ../../tutorial.rst:266
+msgid "And, Or, Xor"
+msgstr ""
+
+#: ../../tutorial.rst:280
+msgid "Reduction"
+msgstr "縮約"
+
+#: ../../tutorial.rst:283
+msgid "Summation"
+msgstr ""
+
+#: ../../tutorial.rst:285
+msgid ":math:``\\sum_i x_i``"
+msgstr ""
+
+#: ../../tutorial.rst:288 ../../tutorial.rst:309
+msgid "Notaion"
+msgstr "記法"
+
+#: ../../tutorial.rst:304
+msgid "Production"
+msgstr ""
+
+#: ../../tutorial.rst:306
+msgid ":math:``\\prod_i x_i``"
+msgstr ""
+

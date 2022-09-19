@@ -1,0 +1,17 @@
+numpy
+sympy
+matplotlib==3.5.2
+pulp
+optuna==2.10.1
+hyperopt
+cvxopt
+amplify
+pytest
+scipy
+timeout_decorator
+Sphinx==3.5.4
+Jinja2==3.0.3
+sphinx-autobuild
+sphinx_rtd_theme
+sphinxcontrib-mermaid
+recommonmark

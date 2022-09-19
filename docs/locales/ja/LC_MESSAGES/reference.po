@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Nariaki Tateiwa
+# This file is distributed under the same license as the ppulp package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ppulp \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-19 10:03+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../reference.rst:2
+msgid "Reference"
+msgstr ""
+
+#: ../../reference.rst:7
+msgid "LpProblem"
+msgstr ""
+
+#: of ppulp.problem.LpProblem:1
+msgid "Problem for linear programming"
+msgstr ""
+
+#: of ppulp.problem.LpProblem:15
+msgid "We can check the details of problem."
+msgstr ""
+
+#: of ppulp.problem.LpProblem:27
+msgid "We solve the problem with standard output."
+msgstr ""
+
+#: of ppulp.problem.LpProblem ppulp.utils.Abs ppulp.utils.And ppulp.utils.Or
+#: ppulp.utils.PiecewiseLinear ppulp.utils.Xor ppulp.utils.maxValue
+#: ppulp.utils.minValue
+msgid "Parameters"
+msgstr ""
+
+#: of ppulp.problem.LpProblem:33
+msgid "name of problem"
+msgstr ""
+
+#: of ppulp.problem.LpProblem.linearize:1
+msgid "linearize objective and constraints function"
+msgstr ""
+
+#: of ppulp.problem.LpProblem.solve:1
+msgid "solve this problem."
+msgstr ""
+
+#: of ppulp.problem.LpProblem.solve:3
+msgid ""
+"We can use arguments same as PULP_CBC_CMD of pulp. `https://coin-"
+"or.github.io/pulp/technical/solvers.html#pulp.apis.PULP_CBC_CMD` shows "
+"the details of the arguments."
+msgstr ""
+
+#: of ppulp.problem.LpProblem.writeLP:1
+msgid "overwarp of pulp.LpProblem.writeLP"
+msgstr ""
+
+#: of ppulp.problem.LpProblem.writeMPS:1
+msgid "overwarp of pulp.LpProblem.writeMPS"
+msgstr ""
+
+#: ../../reference.rst:13
+msgid "Utilities"
+msgstr ""
+
+#: ../../reference.rst:24:<autosummary>:1
+msgid ":py:obj:`maxValue <ppulp.maxValue>`\\ \\(exp\\)"
+msgstr ""
+
+#: ../../reference.rst:24:<autosummary>:1 of ppulp.utils.maxValue:1
+#: ppulp.utils.minValue:1
+msgid "Calculate max value of expression"
+msgstr ""
+
+#: ../../reference.rst:24:<autosummary>:1
+msgid ":py:obj:`minValue <ppulp.minValue>`\\ \\(exp\\)"
+msgstr ""
+
+#: ../../reference.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`PiecewiseLinear <ppulp.PiecewiseLinear>`\\ \\(f\\, xl\\, "
+"xu\\[\\, num\\]\\)"
+msgstr ""
+
+#: ../../reference.rst:24:<autosummary>:1 of ppulp.utils.PiecewiseLinear:1
+msgid "Non linear function approximator"
+msgstr ""
+
+#: ../../reference.rst:24:<autosummary>:1
+msgid ":py:obj:`Abs <ppulp.Abs>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../reference.rst:24:<autosummary>:1 of ppulp.utils.Abs:1
+msgid "Absolute variable"
+msgstr ""
+
+#: ../../reference.rst:24:<autosummary>:1
+msgid ":py:obj:`And <ppulp.And>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../reference.rst:24:<autosummary>:1 of ppulp.utils.And:1
+msgid "x & y"
+msgstr ""
+
+#: ../../reference.rst:24:<autosummary>:1
+msgid ":py:obj:`Or <ppulp.Or>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../reference.rst:24:<autosummary>:1 of ppulp.utils.Or:1
+msgid "x | y"
+msgstr ""
+
+#: ../../reference.rst:24:<autosummary>:1
+msgid ":py:obj:`Xor <ppulp.Xor>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../reference.rst:24:<autosummary>:1 of ppulp.utils.Xor:1
+msgid "x ^ y"
+msgstr ""
+
+#: of ppulp.utils.maxValue ppulp.utils.minValue
+msgid "Returns"
+msgstr ""
+
+#: of ppulp.utils.maxValue:6
+msgid "maximum value of this expression can take"
+msgstr ""
+
+#: of ppulp.utils.Abs ppulp.utils.And ppulp.utils.Or ppulp.utils.Xor
+#: ppulp.utils.maxValue ppulp.utils.minValue
+msgid "Return type"
+msgstr ""
+
+#: of ppulp.utils.minValue:6
+msgid "minimum value of this expression can take"
+msgstr ""
+
+#: of ppulp.utils.PiecewiseLinear:18
+msgid "python function return the value"
+msgstr ""
+
+#: of ppulp.utils.PiecewiseLinear:20
+msgid "lower bound of domain"
+msgstr ""
+
+#: of ppulp.utils.PiecewiseLinear:22
+msgid "upper bound of domain"
+msgstr ""
+
+#: of ppulp.utils.PiecewiseLinear:24
+msgid "number of samples"
+msgstr ""
+

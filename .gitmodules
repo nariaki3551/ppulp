@@ -1,0 +1,6 @@
+[submodule "flopt"]
+	path = flopt
+	url = https://github.com/nariaki3551/flopt.git
+[submodule "pulp"]
+	path = pulp
+	url = https://github.com/coin-or/pulp.git
