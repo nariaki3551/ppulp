@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
-from codecs import open
-from os import path
+import codecs
+import os
 
-here = path.abspath(path.dirname(__file__))
+here = os.path.abspath(path.dirname(__file__))
 
-with open(path.join(here, "README.md"), encoding="utf-8") as f:
+with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
@@ -15,16 +15,8 @@ setup(
     license="MIT",
     install_requires=[
         "numpy",
-        "sympy",
-        "matplotlib==3.5.2",
         "pulp",
-        "optuna==2.10.1",
-        "hyperopt",
-        "cvxopt",
-        "amplify",
-        "pytest",
-        "scipy",
-        "timeout_decorator",
+        "flopt>=0.5.5",
     ],
     author="nariaki tateiwa",
     author_email="nariaki3551@gmail.com",
