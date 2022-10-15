@@ -1,9 +1,12 @@
 # ppulp
 
 P(retty)PuLP is an extension of PuLP, linear programming problem modeling tool.
-
 You can use the basic features of pulp and the following useful extensions to make modeling simpler.
 
+[document](https://ppulp.readthedocs.io/en/latest/)
+
+[![Documentation Status](https://readthedocs.org/projects/ppulp/badge/?version=latest)](https://ppulp.readthedocs.io/en/latest/?badge=latest)
+[![PyPI version](https://badge.fury.io/py/ppulp.svg)](https://badge.fury.io/py/ppulp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 <br>
@@ -104,3 +107,7 @@ lpSum(x)
 # production
 lpProd(x)
 ```
+
+## Learning more
+
+[document](https://ppulp.readthedocs.io/en/latest/)
