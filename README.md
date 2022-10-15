@@ -2,7 +2,7 @@
 
 P(retty)PuLP is an extension of PuLP, linear programming problem modeling tool.
 
-You can use the basic features of pulp plus the following useful extensions to make modeling simpler.
+You can use the basic features of pulp and the following useful extensions to make modeling simpler.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
