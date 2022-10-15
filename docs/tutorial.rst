@@ -135,6 +135,7 @@ Example 1
            x >= -1
            y >= -1
   """
+  from ppulp import *
 
   x = LpVariable("x", lowBound=-1)
   y = LpVariable("y", lowBound=-1)
