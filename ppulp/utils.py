@@ -230,14 +230,14 @@ class PiecewiseLinear:
 
         from ppulp import *
         import math
-        
+
         prob = LpProblem(sense="Minimize")
-        
+
         x = LpVariable("x", lowBound=3, cat="Continuous")
         y = LpVariable("y", lowBound=4, cat="Continuous")
-        
+
         f = PiecewiseLinear(math.log, xl=7, xu=100, num=3)
-        
+
         prob += f(x + y)
         prob += f(x) >= 10
 
