@@ -48,6 +48,7 @@ class LpProblem(Problem):
     sense : OptimizationType or str {"Minimize", "Maximize"}
 
     """
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.pulp_lp = None
@@ -110,15 +111,13 @@ class LpProblem(Problem):
         return self.obj
 
     def writeLP(self, *args, **kwargs):
-        """overwarp of pulp.LpProblem.writeLP
-        """
+        """overwarp of pulp.LpProblem.writeLP"""
         if self.has_set_pulp_lp:
             self.set_pulp()
         self.pulp_lp.writeLP(*args, **kwargs)
 
     def writeMPS(self, *args, **kwargs):
-        """overwarp of pulp.LpProblem.writeMPS
-        """
+        """overwarp of pulp.LpProblem.writeMPS"""
         if self.has_set_pulp_lp:
             self.set_pulp()
         self.pulp_lp.writePS(*args, **kwargs)
