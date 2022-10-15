@@ -1,13 +1,11 @@
-import os
 from setuptools import setup, find_packages
-
 import codecs
+import os
 
 here = os.path.abspath(os.path.dirname(__file__))
 
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
-
 
 setup(
     name="ppulp",
@@ -16,18 +14,9 @@ setup(
     version="0.1.0",
     license="MIT",
     install_requires=[
-        "flopt @ git+ssh://git@github.com/nariaki3551/flopt#egg=flopt",
         "numpy",
-        "sympy",
-        "matplotlib==3.5.2",
         "pulp",
-        "optuna==2.10.1",
-        "hyperopt",
-        "cvxopt",
-        "amplify",
-        "pytest",
-        "scipy",
-        "timeout_decorator",
+        "flopt>=0.5.5",
     ],
     author="nariaki tateiwa",
     author_email="nariaki3551@gmail.com",
