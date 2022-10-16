@@ -1,6 +1,6 @@
 # ppulp
 
-P(retty)PuLP is an extension of PuLP, linear programming problem modeling tool.
+P(retty)PuLP is an extension of PuLP, linear programming problem modeling tool using [flopt](https://github.com/nariaki3551/flopt).
 You can use the basic features of pulp and the following useful extensions to make modeling simpler.
 
 [document](https://ppulp.readthedocs.io/en/latest/)
@@ -111,3 +111,4 @@ lpProd(x)
 ## Learning more
 
 [document](https://ppulp.readthedocs.io/en/latest/)
+

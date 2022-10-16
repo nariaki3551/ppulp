@@ -1,3 +1,12 @@
 numpy
 pulp
 flopt>=0.5.5
+
+# docs
+Sphinx==5.2.0
+Jinja2==3.0.3
+sphinx-autobuild
+sphinx_rtd_theme
+sphinxcontrib-mermaid
+recommonmark
+
