@@ -23,8 +23,7 @@ def maxValue(exp):
         solver = flopt.Solver("ScipyMilpSearch")
     elif exp.isQuadratic():
         solver = flopt.Solver("CvxoptQpSearch")
-    else:
-        return "Unknown"
+    return "Unknown"
     prob = flopt.Problem(sense=flopt.Maximize)
     prob += exp
     status, logs = prob.solve(solver, msg=False)
@@ -32,8 +31,7 @@ def maxValue(exp):
         return prob.getObjectiveValue()
     elif status == SolverTerminateState.Unbounded:
         return "Unbounded"
-    else:
-        return "Unknown"
+    return "Unknown"
 
 
 def minValue(exp):
@@ -61,8 +59,7 @@ def minValue(exp):
         return prob.getObjectiveValue()
     elif status == SolverTerminateState.Unbounded:
         return "Unbounded"
-    else:
-        return "Unknown"
+    return "Unknown"
 
 
 class VarElementWithConsts:
@@ -92,7 +89,7 @@ class VarElementWithConsts:
 
 class VarContinuousWithConsts(flopt.variable.VarContinuous, VarElementWithConsts):
     def __init__(self, name, *args, **kwargs):
-        self.constraints = list()
+        self.constraints = []
         self.add_consts_prob = set()
         if is_create_variable_mode():
             assert name is not None
@@ -102,7 +99,7 @@ class VarContinuousWithConsts(flopt.variable.VarContinuous, VarElementWithConsts
 
 class VarBinaryWithConsts(flopt.variable.VarBinary, VarElementWithConsts):
     def __init__(self, name, *args, **kwargs):
-        self.constraints = list()
+        self.constraints = []
         self.add_consts_prob = set()
         if is_create_variable_mode():
             assert name is not None

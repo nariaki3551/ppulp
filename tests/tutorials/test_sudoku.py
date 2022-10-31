@@ -83,12 +83,12 @@ def test_sudoku(tmpdir):
 
     # The solution is written to the sudokuout.txt file
     for r in ROWS:
-        if r in [1, 4, 7]:
+        if r in (1, 4, 7):
             print("+-------+-------+-------+")
         for c in COLS:
             for v in VALS:
                 if value(choices[v][r][c]) == 1:
-                    if c in [1, 4, 7]:
+                    if c in (1, 4, 7):
                         print("| ", end="")
                     print(str(v) + " ", end="")
                     if c == 9:
