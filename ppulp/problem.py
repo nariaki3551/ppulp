@@ -56,7 +56,7 @@ class LpProblem(Problem):
         self.has_set_pulp_lp = True
         self.status = None
 
-    def solve(self, **kwargs):
+    def solve(self, *args, **kwargs):
         """solve this problem.
 
         We can use arguments same as PULP_CBC_CMD of pulp.
@@ -68,9 +68,9 @@ class LpProblem(Problem):
 
         # solve
         try:
-            self.status = self.pulp_lp.solve(**kwargs)
+            self.status = self.pulp_lp.solve(*args, **kwargs)
         except TypeError:
-            solver = pulp.PULP_CBC_CMD(**kwargs)
+            solver = pulp.PULP_CBC_CMD(*args, **kwargs)
             self.status = self.pulp_lp.solve(solver=solver)
 
         # decode result
